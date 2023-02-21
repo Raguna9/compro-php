@@ -26,23 +26,24 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="profile.php">Profile</a>
+            <a class="nav-link" href="index.php#profile">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php#pelajaran">pelajaran</a>
+            <a class="nav-link" href="index.php#pelajaran">Pelajaran</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="artikel.php">Artikel</a>
+          </li><li class="nav-item">
             <a class="nav-link" href="index.php#galery">Galeri</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link active" href="#">Kontak</a>
+            <a class="nav-link" href="#">Kontak</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.php">

@@ -80,6 +80,11 @@ if (!isset($_SESSION["login"])) {
                     <i class="bi bi-images"></i>
                     Foto
                 </a>
+            </li><li>
+                <a class="text-white nav-link" href="adm_artikel.php">
+                    <i class="bi bi-images"></i>
+                    Artikel
+                </a>
             </li>
             <li>
                 <a class="text-white nav-link bg-warning" href="adm_setting.php">

@@ -48,7 +48,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                         <td><?php echo $result['ket_foto']; ?></td>
 
                         <td class="text-center">
-                            <img src="../source/images<?= $result['foto'] ?>" alt="" width="150px">
+                            <img src="../source/images/foto/<?= $result['foto'] ?>" alt="" width="150px">
                         </td>
                         <td>
                             <a href="../app/foto/ubah.php?id=<?php echo $result['id_foto']; ?>" class="btn btn-sm btn-warning">Edit</a>

@@ -63,7 +63,7 @@ if (!isset($_SESSION["login"])) {
             </center>
             <hr class="text-white" />
             <li>
-                <a class="text-white nav-link " href="adm_pelajaran.php">
+                <a class="text-white nav-link  bg-warning " href="adm_pelajaran.php">
                     <i class="bi bi-book"></i>
                     Pelajaran
                 </a>
@@ -75,9 +75,14 @@ if (!isset($_SESSION["login"])) {
                 </a>
             </li>
             <li>
-                <a class="text-white nav-link bg-warning" href="adm_foto.php">
+                <a class="text-white nav-link" href="adm_foto.php">
                     <i class="bi bi-images"></i>
                     Foto
+                </a>
+            </li><li>
+                <a class="text-white nav-link" href="adm_artikel.php">
+                    <i class="bi bi-images"></i>
+                    Artikel
                 </a>
             </li>
             <li>
