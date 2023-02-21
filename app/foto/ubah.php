@@ -77,7 +77,7 @@ if (isset($_POST["submit"])) {
 
                 <div class="mt-3">
 
-                    <img src="../../source/images<?= $foto['foto'] ?>" alt="<?= $foto['ket_foto'] ?>" width="150px">
+                    <img src="../../source/images/foto/<?= $foto['foto'] ?>" alt="<?= $foto['ket_foto'] ?>" width="150px">
                 </div>
             </div>
 

@@ -48,15 +48,15 @@ $artikel = mysqli_query($conn, "SELECT * FROM artikel");
                         <?php echo $result['konten_artikel']; ?>
                     </td>
                     <td>
-                        <img src="http://localhost/pkL/source/images/<?= $result['foto_artikel'] ?>" alt="" width="150px">
+                        <img src="../source/images/artikel/<?= $result['foto_artikel'] ?>" alt="" width="150px">
                     </td>
                     <td>
                         <?php echo $result['pembuat_artikel']; ?>
                     </td>
                     <td>
-                        <a href="app/ubah.php?id=<?php echo $result['id_artikel']; ?>"
+                        <a href="../app/artikel/ubah.php?id=<?php echo $result['id_artikel']; ?>"
                             class="btn btn-sm btn-warning">Edit</a>
-                        <a href="app/hapus.php?id=<?php echo $result['id_artikel']; ?>"
+                        <a href="../app/artikel/hapus.php?id=<?php echo $result['id_artikel']; ?>"
                             class="btn btn-sm btn-danger">Hapus</a>
                     </td>
                 </tr>

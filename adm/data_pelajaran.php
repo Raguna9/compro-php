@@ -49,7 +49,7 @@ $pelajaran = mysqli_query($conn, "SELECT * FROM pelajaran");
                         <td><?php echo $result['nama_pelajaran']; ?></td>
                         <td><?php echo $result['penjelasan_pelajaran']; ?></td>
                         <td class="text-center">
-                            <img src="../source/images/<?= $result['foto_pelajaran'] ?>" alt="" width="150px">
+                            <img src="../source/images/pelajaran/<?= $result['foto_pelajaran'] ?>" alt="" width="150px">
                         </td>
                         <td>
                             <a href="../app/pelajaran/ubah.php?id=<?php echo $result['id_pelajaran']; ?>" class="btn btn-sm btn-warning">Edit</a>

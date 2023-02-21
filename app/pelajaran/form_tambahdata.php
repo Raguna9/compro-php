@@ -22,14 +22,14 @@ if (isset($_POST["submit"])) {
         echo "
         <script>
             alert('data berhasil ditambahkan');
-            document.location.href = '../adm/adm_pelajaran.php'
+            document.location.href = '../../adm/adm_pelajaran.php'
         </script>
         ";
     } else {
         echo "
         <script>
             alert('data berhasil ditambahkan');
-            document.location.href = '../adm/adm_pelajaran.php'
+            document.location.href = '../../adm/adm_pelajaran.php'
         </script>
         ";
     }
