@@ -2,17 +2,7 @@
 // include 'koneksi.php';
 require '../app/functions.php';
 
-// $pelajaran = mysqli_query($conn, "SELECT * FROM pelajaran");
 $fasilitas = mysqli_query($conn, "SELECT * FROM fasilitas");
-
-// ambil data di URL
-// $id = $_GET["id"];
-
-// query data pelajaran
-// $mapel = query("SELECT * FROM pelajaran WHERE id_pelajaran =$id")[0];
-
-
-
 ?>
 <center class="m-1">
     <div class="container-lg">
