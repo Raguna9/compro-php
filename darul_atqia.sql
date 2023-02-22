@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Feb 2023 pada 14.19
--- Versi server: 10.1.38-MariaDB
--- Versi PHP: 7.3.3
+-- Generation Time: Feb 22, 2023 at 03:08 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -25,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,17 +34,17 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `username`, `password`) VALUES
-(1, 'admin', 'Darul123'),
+(1, 'admin', '123'),
 (2, 'darul', 'admin1234');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `album`
+-- Table structure for table `album`
 --
 
 CREATE TABLE `album` (
@@ -57,7 +56,28 @@ CREATE TABLE `album` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `fasilitas`
+-- Table structure for table `artikel`
+--
+
+CREATE TABLE `artikel` (
+  `id_artikel` int(11) NOT NULL,
+  `jdl_artikel` text NOT NULL,
+  `konten_artikel` text NOT NULL,
+  `foto_artikel` text NOT NULL,
+  `pembuat_artikel` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `artikel`
+--
+
+INSERT INTO `artikel` (`id_artikel`, `jdl_artikel`, `konten_artikel`, `foto_artikel`, `pembuat_artikel`) VALUES
+(8, 'jgvjv', 'jvjhvhb', '63f4eefd5cca7.png', 'fbrb');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fasilitas`
 --
 
 CREATE TABLE `fasilitas` (
@@ -66,7 +86,7 @@ CREATE TABLE `fasilitas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `fasilitas`
+-- Dumping data for table `fasilitas`
 --
 
 INSERT INTO `fasilitas` (`id_fasilitas`, `nama_fasilitas`) VALUES
@@ -74,12 +94,12 @@ INSERT INTO `fasilitas` (`id_fasilitas`, `nama_fasilitas`) VALUES
 (2, 'lapangan'),
 (3, 'alat olahraga'),
 (4, 'dapur umum untuk santri'),
-(6, 'Lapangan Sepak Bola');
+(7, 'Lapangan Sepak Bola');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `foto`
+-- Table structure for table `foto`
 --
 
 CREATE TABLE `foto` (
@@ -89,17 +109,17 @@ CREATE TABLE `foto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `foto`
+-- Dumping data for table `foto`
 --
 
 INSERT INTO `foto` (`id_foto`, `ket_foto`, `foto`) VALUES
-(1, 'Buka Bersama', '638c7bcb2e5b7.jpg'),
-(3, 'Pemasangan plank', '638c7ad58ae26.jpg');
+(1, 'Buka Bersama', '63f4e3ca882f2.jpg'),
+(3, 'Pemasangan plank', '63f4e3d756b10.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pelajaran`
+-- Table structure for table `pelajaran`
 --
 
 CREATE TABLE `pelajaran` (
@@ -110,11 +130,11 @@ CREATE TABLE `pelajaran` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `pelajaran`
+-- Dumping data for table `pelajaran`
 --
 
 INSERT INTO `pelajaran` (`id_pelajaran`, `nama_pelajaran`, `penjelasan_pelajaran`, `foto_pelajaran`) VALUES
-(9, 'IPA', 'Ilmu Pengetahuan Alam', '638a42beba0a9.jpg'),
+(9, 'IPA upd', 'Ilmu Pengetahuan Alam', '63f4f11e908a0.jpg'),
 (14, 'darassullugoh', 'kitab yang mempelajari tentang', 'darasullugoh.jpg'),
 (16, 'fiqhul wadih', 'Kitab al-Fiqh al-Wadhih, merupakan kitab fikih sederhana berbahasa Arab yang ditulis oleh Mahmud Yunus, salah seorang tokoh pendidikan islam di Indonesia.  Berikut ini terjemahan dari Isi Kitab Al-Fikhul Wadih, pada bagian pertama membahas tentang Thaharah.', 'fiqulwadih.jpg'),
 (17, 'matan bina', 'kitab matan bina adalah', 'muktarulhadist.jpg'),
@@ -125,68 +145,80 @@ INSERT INTO `pelajaran` (`id_pelajaran`, `nama_pelajaran`, `penjelasan_pelajaran
 --
 
 --
--- Indeks untuk tabel `admin`
+-- Indexes for table `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- Indeks untuk tabel `album`
+-- Indexes for table `album`
 --
 ALTER TABLE `album`
   ADD PRIMARY KEY (`id_album`);
 
 --
--- Indeks untuk tabel `fasilitas`
+-- Indexes for table `artikel`
+--
+ALTER TABLE `artikel`
+  ADD PRIMARY KEY (`id_artikel`);
+
+--
+-- Indexes for table `fasilitas`
 --
 ALTER TABLE `fasilitas`
   ADD PRIMARY KEY (`id_fasilitas`);
 
 --
--- Indeks untuk tabel `foto`
+-- Indexes for table `foto`
 --
 ALTER TABLE `foto`
   ADD PRIMARY KEY (`id_foto`);
 
 --
--- Indeks untuk tabel `pelajaran`
+-- Indexes for table `pelajaran`
 --
 ALTER TABLE `pelajaran`
   ADD PRIMARY KEY (`id_pelajaran`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `admin`
+-- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `album`
+-- AUTO_INCREMENT for table `album`
 --
 ALTER TABLE `album`
   MODIFY `id_album` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `fasilitas`
+-- AUTO_INCREMENT for table `artikel`
+--
+ALTER TABLE `artikel`
+  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `fasilitas`
 --
 ALTER TABLE `fasilitas`
-  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `foto`
+-- AUTO_INCREMENT for table `foto`
 --
 ALTER TABLE `foto`
-  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_foto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `pelajaran`
+-- AUTO_INCREMENT for table `pelajaran`
 --
 ALTER TABLE `pelajaran`
-  MODIFY `id_pelajaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_pelajaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
