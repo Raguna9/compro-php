@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <link href="source/images/Logo_Ponpes.png" rel="shorcut icon" />
+  <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
 
   <title>Sign in YPPDA</title>
 
@@ -76,7 +76,7 @@
 <body class="text-center">
   <main class="form-signin w-100 m-auto">
     <form action="auth.php" method="post">
-      <img class="mb-4" src="source/images/Logo_Ponpes.png" alt="" width="100" height="100" />
+      <img class="mb-4" src="source/images/statis/Logo_Ponpes.png" alt="" width="100" height="100" />
       <h1 class="h3 mb-3 fw-normal">Sign in</h1>
 
       <div class="form-floating">

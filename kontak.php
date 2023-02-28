@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
-  <link href="source/images/Logo_Ponpes.png" rel="shorcut icon" />
+  <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -20,13 +20,13 @@
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-success shadow-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="source/images/Logo_Ponpes.png" alt="Logo_Ponpes" width="40" height="40" class="d-inline-block align-text-center" />
+        <img src="source/images/statis/Logo_Ponpes.png" alt="Logo_Ponpes" width="40" height="40" class="d-inline-block align-text-center" />
         Yayasan Pondok Pesantren Darul Atqia
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
@@ -39,7 +39,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="artikel.php">Artikel</a>
-          </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="index.php#galery">Galeri</a>
           </li>
           <li class="nav-item">
