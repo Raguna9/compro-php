@@ -10,9 +10,10 @@ function tambahPesan($data)
     $nama_pesan = htmlspecialchars($data["nama_pesan"]);
     $email_pesan = htmlspecialchars($data["email_pesan"]);
     $isi_pesan = htmlspecialchars($data["isi_pesan"]);
+    $tanggal_pesan = date("Y-m-d H:i:s"); 
 
     // query insert data
-    $query = "INSERT INTO pesan VALUES ('','$nama_pesan','$email_pesan','$isi_pesan')";
+    $query = "INSERT INTO pesan VALUES ('','$nama_pesan','$email_pesan','$isi_pesan','$tanggal_pesan')";
 
     mysqli_query($conn, $query);
 

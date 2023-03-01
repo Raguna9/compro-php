@@ -47,6 +47,14 @@
             </a>
         </li>
         <li>
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_balasan.php')
+                echo 'bg-warning'; ?>"
+                href="adm_balasan.php">
+                <i class="bi bi-chat-left-dots"></i>
+                Basalan Artikel
+            </a>
+        </li>
+        <li>
             <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_setting.php')
                 echo 'bg-warning'; ?>"
                 href="adm_setting.php">

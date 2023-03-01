@@ -65,7 +65,11 @@ $tanggal_artikel = $row['tanggal_artikel'];
                 <h5 class="card-title">
                     <?php echo $jdl_artikel; ?>
                 </h5>
-                <p class="text-muted"><?php echo $tanggal_artikel; ?> <span>| Oleh: <?php echo $pembuat_artikel; ?></span></p>
+                <p class="text-muted">
+                    <?php echo $tanggal_artikel; ?> <span>| Oleh:
+                        <?php echo $pembuat_artikel; ?>
+                    </span>
+                </p>
                 <p class="card-text">
                     <?php echo $konten_artikel; ?>
                 </p>
@@ -73,6 +77,8 @@ $tanggal_artikel = $row['tanggal_artikel'];
         </div>
 
     </div>
+    <!-- Memuat file kirim_balasan.php -->
+    <?php include("app/balasan/kirim_balasan.php"); ?>
 
     <!-- Memuat file components/footer.php -->
     <?php include("components/footer.php"); ?>
