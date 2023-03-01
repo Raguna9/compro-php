@@ -27,7 +27,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
   <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
@@ -35,7 +36,9 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!-- Memuat file components/navbar.php -->
   <?php include("components/navbar.php"); ?>
 
@@ -97,12 +100,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
       while ($result = mysqli_fetch_array($pelajaran)) {
         // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
         // $no++;
-      ?>
+        ?>
         <!-- $result = mysqli_fetch_array($pelajaran); -->
 
         <div class="col-lg-4 col-md-6">
 
-          <img src="source/images/<?= $result['foto_pelajaran'] ?>" alt="" width="150px" height="150px" class="rounded-circle" />
+          <img src="source/images/<?= $result['foto_pelajaran'] ?>" alt="" width="150px" height="150px"
+            class="rounded-circle" />
           <!-- <rect width="100%" height="100%" fill="#777" /> -->
           <!-- <text x="50%" y="50%" fill="#777" dy=".3em"></text> -->
 
@@ -128,7 +132,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <div class="container col-xxl-8 px-4 py-5 bg-light" id="profile">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="source/images/statis/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="Darul Atqia" width="700" height="500" loading="lazy" />
+        <img src="source/images/statis/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="Darul Atqia" width="700"
+          height="500" loading="lazy" />
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Sekilas Profile Pondok Pesantren Darul Atqia</h1>
@@ -139,7 +144,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
           terdapat lembaga lainnya seperti Majelis Taklim.
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2"><a class="link link-dark" href="profile.php">Selengkapnya &raquo;</a></button>
+          <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2"><a class="link link-dark"
+              href="profile.php">Selengkapnya &raquo;</a></button>
         </div>
       </div>
     </div>
@@ -158,7 +164,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
       while ($result = mysqli_fetch_array($fasilitas)) {
         // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
         // $no++;
-      ?>
+        ?>
 
         <div class="col d-flex align-items-start">
           <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
@@ -179,7 +185,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill">
       <symbol id="pin" viewBox="0 0 16 16">
-        <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
+        <path
+          d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
       </symbol>
     </svg>
   </div>
@@ -200,7 +207,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
         while ($result = mysqli_fetch_array($foto)) {
           // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
           // $no++;
-        ?>
+          ?>
 
           <div class="col">
             <div class="card shadow-sm">
@@ -208,13 +215,15 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
-                <img src="source/images<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
+                <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%"
+                  height="100%" />
 
 
               </button>
 
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-center">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -222,7 +231,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      <img src="source/images<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
+                      <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%"
+                        height="100%" />
 
 
 
@@ -257,12 +267,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     </div>
   </div>
   <!-- Album Akhir -->
-
   <!-- Memuat file components/footer.php -->
   <?php include("components/footer.php"); ?>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
