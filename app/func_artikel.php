@@ -12,14 +12,16 @@ function tambahArtikel($data)
         return false;
     }
     $pembuat_artikel = htmlspecialchars($data["pembuat_artikel"]);
+    $tanggal_artikel = date("Y-m-d H:i:s"); // Tanggal otomatis saat artikel ditambahkan
 
     // query insert data
-    $query = "INSERT INTO artikel VALUES ('','$jdl_artikel','$konten_artikel','$foto_artikel','$pembuat_artikel')";
+    $query = "INSERT INTO artikel VALUES ('','$jdl_artikel','$konten_artikel','$foto_artikel','$pembuat_artikel','$tanggal_artikel')";
 
     mysqli_query($conn, $query);
 
     return mysqli_affected_rows($conn);
 }
+
 
 function uploadArtikel()
 {
@@ -103,22 +105,24 @@ function ubahArtikel($data)
     $gambarLama = htmlspecialchars($data["gambarLama"]);
     $pembuat_artikel = htmlspecialchars($data["pembuat_artikel"]);
 
-    //cek apakah user memilih gambar baru atau tidak
+    // cek apakah user memilih gambar baru atau tidak
     if ($_FILES['foto_artikel']['error'] === 4) {
         $foto_artikel = $gambarLama;
     } else {
-
         $foto_artikel = uploadArtikel();
     }
 
-    // query update data
+    // tambahkan tanggal artikel
+    $tanggal_artikel = date("Y-m-d H:i:s");
 
+    // query update data
     $query = "UPDATE artikel SET
-                jdl_artikel = '$jdl_artikel',
-                konten_artikel = '$konten_artikel',
-                foto_artikel = '$foto_artikel',
-                pembuat_artikel = '$pembuat_artikel'
-                WHERE id_artikel = $id_artikel";
+            jdl_artikel = '$jdl_artikel',
+            konten_artikel = '$konten_artikel',
+            foto_artikel = '$foto_artikel',
+            tanggal_artikel = '$tanggal_artikel',
+            pembuat_artikel = '$pembuat_artikel'
+            WHERE id_artikel = $id_artikel";
 
     mysqli_query($conn, $query);
 

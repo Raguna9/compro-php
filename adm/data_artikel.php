@@ -26,6 +26,7 @@ $artikel = mysqli_query($conn, "SELECT * FROM artikel");
                 <th>Konten</th>
                 <th>Foto Artikel</th>
                 <th>Pembuat</th>
+                <th>Tanggal</th>
                 <th>Action</th>
             </tr>
 
@@ -52,6 +53,9 @@ $artikel = mysqli_query($conn, "SELECT * FROM artikel");
                     </td>
                     <td>
                         <?php echo $result['pembuat_artikel']; ?>
+                    </td>
+                    <td>
+                        <?php echo $result['tanggal_artikel']; ?>
                     </td>
                     <td>
                         <a href="../app/artikel/ubah.php?id=<?php echo $result['id_artikel']; ?>"
