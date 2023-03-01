@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2023 at 03:08 AM
+-- Generation Time: Mar 01, 2023 at 06:12 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -140,6 +140,26 @@ INSERT INTO `pelajaran` (`id_pelajaran`, `nama_pelajaran`, `penjelasan_pelajaran
 (17, 'matan bina', 'kitab matan bina adalah', 'muktarulhadist.jpg'),
 (18, 'sejarah', 'mata pelajaran sejarah merupakan mata pelajaran yang mempelajari segala hal yang telah terjadi di masa lalu', '638a42d252261.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pesan`
+--
+
+CREATE TABLE `pesan` (
+  `id_pesan` int(11) NOT NULL,
+  `nama_pesan` varchar(255) NOT NULL,
+  `email_pesan` varchar(255) NOT NULL,
+  `isi_pesan` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `pesan`
+--
+
+INSERT INTO `pesan` (`id_pesan`, `nama_pesan`, `email_pesan`, `isi_pesan`) VALUES
+(2, 'Tes', 'tes@gmail.com', 'Ini percobaan');
+
 --
 -- Indexes for dumped tables
 --
@@ -181,6 +201,12 @@ ALTER TABLE `pelajaran`
   ADD PRIMARY KEY (`id_pelajaran`);
 
 --
+-- Indexes for table `pesan`
+--
+ALTER TABLE `pesan`
+  ADD PRIMARY KEY (`id_pesan`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -206,7 +232,7 @@ ALTER TABLE `artikel`
 -- AUTO_INCREMENT for table `fasilitas`
 --
 ALTER TABLE `fasilitas`
-  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_fasilitas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `foto`
@@ -219,6 +245,12 @@ ALTER TABLE `foto`
 --
 ALTER TABLE `pelajaran`
   MODIFY `id_pelajaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `pesan`
+--
+ALTER TABLE `pesan`
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
