@@ -21,6 +21,7 @@ $pesan = mysqli_query($conn, "SELECT * FROM pesan");
                     <th class="col-sm-2">Nama Pengirim</th>
                     <th class="col-sm-4">Email Pengirim</th>
                     <th class="col-sm-3">Isi Pesan</th>
+                    <th class="col-sm-3">Tanggal Pesan</th>
                     <th class="col-sm-2">Action</th>
                 </tr>
 
@@ -37,6 +38,7 @@ $pesan = mysqli_query($conn, "SELECT * FROM pesan");
                         <td><?php echo $result['nama_pesan']; ?></td>
                         <td><?php echo $result['email_pesan']; ?></td>
                         <td><?php echo $result['isi_pesan']; ?></td>
+                        <td><?php echo $result['tanggal_pesan']; ?></td>
                         <td>
                             <a href="../app/pesan/hapus.php?id=<?php echo $result['id_pesan']; ?>" class="btn btn-sm btn-danger">Hapus</a>
                         </td>
