@@ -53,6 +53,14 @@ if (!isset($_SESSION["login"])) {
     #main-content {
         transition: 0.4s;
     }
+
+    .text-artikel {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
 </style>
 
 <body>

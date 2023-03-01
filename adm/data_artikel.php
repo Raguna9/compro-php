@@ -43,10 +43,14 @@ $artikel = mysqli_query($conn, "SELECT * FROM artikel");
                         <?php echo $no; ?>
                     </td>
                     <td>
-                        <?php echo $result['jdl_artikel']; ?>
+                        <p class="text-artikel">
+                            <?php echo $result['jdl_artikel']; ?>
+                        </p>
                     </td>
                     <td>
-                        <?php echo $result['konten_artikel']; ?>
+                        <p class="text-artikel">
+                            <?php echo $result['konten_artikel']; ?>
+                        </p>
                     </td>
                     <td>
                         <img src="../source/images/artikel/<?= $result['foto_artikel'] ?>" alt="" width="150px">
