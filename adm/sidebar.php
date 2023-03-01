@@ -7,31 +7,49 @@
         </center>
         <hr class="text-white" />
         <li>
-            <a class="text-white nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'adm_pelajaran.php') echo 'bg-warning'; ?>" href="adm_pelajaran.php">
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_pelajaran.php')
+                echo 'bg-warning'; ?>"
+                href="adm_pelajaran.php">
                 <i class="bi bi-book"></i>
                 Pelajaran
             </a>
         </li>
         <li>
-            <a class="text-white nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'adm_fasilitas.php') echo 'bg-warning'; ?>" href="adm_fasilitas.php">
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_fasilitas.php')
+                echo 'bg-warning'; ?>"
+                href="adm_fasilitas.php">
                 <i class="bi bi-building"></i>
                 Fasilitas
             </a>
         </li>
         <li>
-            <a class="text-white nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'adm_foto.php') echo 'bg-warning'; ?>" href="adm_foto.php">
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_foto.php')
+                echo 'bg-warning'; ?>"
+                href="adm_foto.php">
                 <i class="bi bi-images"></i>
                 Foto
             </a>
         </li>
         <li>
-            <a class="text-white nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'adm_artikel.php') echo 'bg-warning'; ?>" href="adm_artikel.php">
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_artikel.php')
+                echo 'bg-warning'; ?>"
+                href="adm_artikel.php">
                 <i class="bi bi-newspaper"></i>
                 Artikel
             </a>
         </li>
         <li>
-            <a class="text-white nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'adm_setting.php') echo 'bg-warning'; ?>" href="adm_setting.php">
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_pesan.php')
+                echo 'bg-warning'; ?>"
+                href="adm_pesan.php">
+                <i class="bi bi-chat-dots-fill"></i>
+                Pesan
+            </a>
+        </li>
+        <li>
+            <a class="text-white nav-link <?php if (basename($_SERVER['PHP_SELF']) == 'adm_setting.php')
+                echo 'bg-warning'; ?>"
+                href="adm_setting.php">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-person-gear" viewBox="0 0 16 16">
                     <path

@@ -3,6 +3,7 @@
 <?php include 'func_fasilitas.php'?>
 <?php include 'func_foto.php'?>
 <?php include 'func_admin.php'?>
+<?php include 'func_pesan.php'?>
 
 <?php
 
