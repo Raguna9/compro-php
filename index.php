@@ -70,14 +70,18 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
         <div class="h-70 p-5 text-bg-dark border rounded-3">
           <h2>Lembaga Formal</h2>
           <p>PAUD, SMP Islam, SMA</p>
-          <button class="btn btn-outline-warning" type="button">Selengkapnya</button>
+          <a href="lembaga.php">
+            <button class="btn btn-outline-warning" type="button">Selengkapnya</button>
+          </a>
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
           <h2>Lembaga Non Formal</h2>
           <p>DARUNNAHDLIYAH</p>
-          <button class="btn btn-outline-secondary" type="button">Selengkapnya</button>
+          <a href="lembaga.php">
+            <button class="btn btn-outline-secondary" type="button">Selengkapnya</button>
+          </a>
         </div>
       </div>
     </div>
@@ -226,8 +230,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button> -->
                     </div>
                   </div>
                 </div>
