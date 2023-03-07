@@ -196,24 +196,24 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
       <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
 
         <?php
-        // $no = 0;
+        $i = 1;
         while ($result = mysqli_fetch_array($foto)) {
+
           // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
           // $no++;
         ?>
 
           <div class="col">
             <div class="card shadow-sm">
-
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
+              <button type="button" class="btn btn-border-0" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $i ?>">
                 <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
-
               </button>
 
               <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal fade" id="exampleModal<?= $i ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
                 <div class="modal-dialog modal-dialog-center">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -221,9 +221,8 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+
                       <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
-
-
 
                     </div>
                     <div class="modal-footer">
@@ -233,12 +232,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
+        <?php
+          $i++;
+        }
+        ?>
 
-        <?php } ?>
 
         <!-- <div class="col">
           <div class="card shadow-sm">
