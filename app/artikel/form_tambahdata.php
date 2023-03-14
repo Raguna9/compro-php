@@ -52,7 +52,8 @@ if (isset($_POST["submit"])) {
             </div>
             <div class="mb-3">
                 <label for="konten_artikel" class="form-label">Konten</label>
-                <input type="text" class="form-control" name="konten_artikel" id="konten_artikel" required></input>
+                <!-- <input type="text" class="form-control" name="konten_artikel" id="konten_artikel" required></input> -->
+                <textarea class="form-control" name="konten_artikel" id="konten_artikel" rows="9"></textarea>
             </div>
             <div class="mb-3">
                 <label for="foto_artikel" class="form-label">Foto Artikel</label>

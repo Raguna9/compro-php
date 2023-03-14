@@ -43,13 +43,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="source/images/carousel.jpg" class="d-block w-100" alt="..." height="486 px" />
+        <img src="source/images/statis/carousel.jpg" class="d-block w-100" alt="..." height="486 px" />
       </div>
       <div class="carousel-item" data-bs-interval="2000">
-        <img src="source/images/carousel4.jpg" class="d-block w-100" alt="..." height="486 px" />
+        <img src="source/images/statis/carousel2.jpg" class="d-block w-100" alt="..." height="486 px" />
       </div>
       <div class="carousel-item">
-        <img src="source/images/carousel5.jpeg" class="d-block w-100" alt="..." height="486 px" />
+        <img src="source/images/statis/carousel3.jpg" class="d-block w-100" alt="..." height="486 px" />
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -106,7 +106,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 
         <div class="col-lg-4 col-md-6">
 
-          <img src="source/images/<?= $result['foto_pelajaran'] ?>" alt="" width="150px" height="150px" class="rounded-circle" />
+          <img src="source/images/pelajaran/<?= $result['foto_pelajaran'] ?>" alt="" width="150px" height="150px" class="rounded-circle" />
           <!-- <rect width="100%" height="100%" fill="#777" /> -->
           <!-- <text x="50%" y="50%" fill="#777" dy=".3em"></text> -->
 
@@ -221,7 +221,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                 <div class="modal-dialog modal-dialog-center">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><?php echo $result['ket_foto']; ?></h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
