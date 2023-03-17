@@ -191,7 +191,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 
   <!-- Album -->
   <div class="container">
-    <h2 class="pb-2 border-bottom">Foto Kegiatan</h2>
+    <h2 class="pb-2 border-bottom">Foto</h2>
 
   </div>
 
