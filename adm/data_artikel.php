@@ -33,7 +33,6 @@ $artikel = mysqli_query($conn, "SELECT * FROM artikel");
             <?php
             $no = 0;
             while ($result = mysqli_fetch_array($artikel)) {
-                // while ($result =  mysqli_query($conn, "SELECT * from artikel")) {
                 $no++;
             ?>
                 <tr>

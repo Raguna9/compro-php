@@ -20,10 +20,12 @@ if (mysqli_num_rows($result) == 0) {
 
 $row = mysqli_fetch_assoc($result);
 $jdl_artikel = $row['jdl_artikel'];
-$konten_artikel = $row['konten_artikel'];
 $foto_artikel = $row['foto_artikel'];
 $pembuat_artikel = $row['pembuat_artikel'];
 $tanggal_artikel = $row['tanggal_artikel'];
+$konten_artikel_asli = $row['konten_artikel'];
+
+$konten_artikel = html_entity_decode($konten_artikel_asli);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +79,7 @@ $tanggal_artikel = $row['tanggal_artikel'];
         </div>
         <!-- Memuat file kirim_balasan.php -->
         <?php include("app/balasan/kirim_balasan.php"); ?>
-        
+
     </div>
 
     <!-- Memuat file components/footer.php -->
