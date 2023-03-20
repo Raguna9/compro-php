@@ -55,6 +55,7 @@ if (!isset($_SESSION["login"])) {
     }
 
     .text-artikel {
+        height: 95px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;

@@ -43,9 +43,10 @@ if (isset($_POST["submit"])) {
     <script>
         tinymce.init({
             selector: 'textarea',
-            plugins: 'autolink lists link image charmap print preview hr anchor pagebreak',
+            plugins: 'autolink lists link charmap print preview hr anchor pagebreak',
             toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
-            autosave_ask_before_unload: false
+            autosave_ask_before_unload: false,
+            branding: false
         });
     </script>
 </head>
