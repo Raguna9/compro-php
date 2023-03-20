@@ -60,7 +60,7 @@ if (!isset($_SESSION["login"])) {
     <?php include("sidebar.php"); ?>
 
     <section class="pt-4 ps-0" id="main-content">
-        <button class="btn btn-success" id="button-toggle">
+        <button class="btn btn-success" id="button-toggle" style="position: fixed;">
             <i class="bi bi-list"></i>
         </button>
     </section>

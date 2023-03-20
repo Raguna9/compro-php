@@ -59,20 +59,9 @@ if (!isset($_SESSION["login"])) {
     <?php include("sidebar.php"); ?>
     
     <section class="pt-4 ps-0" id="main-content">
-        <button class="btn btn-success" id="button-toggle">
+        <button class="btn btn-success" id="button-toggle" style="position: fixed;">
             <i class="bi bi-list"></i>
         </button>
-        <!-- <div class="card mt-5">
-            <div class="card-body">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-                    animi maxime at minima. Totam vero omnis ducimus commodi placeat
-                    accusamus, repudiandae nemo, harum magni aperiam esse voluptates.
-                    Non, sapiente vero?
-                </p>
-            </div>
-        </div> -->
     </section>
     <?php include 'data_setting.php' ?>
 
