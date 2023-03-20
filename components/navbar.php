@@ -57,7 +57,7 @@
                                                     echo "index.php#galery";
                                                 } else if (basename($_SERVER['PHP_SELF']) == "artikel.php") {
                                                     echo "index.php#galery";
-                                                } ?>">Galeri</a>
+                                                } ?>">Foto</a>
                 </li>
                 <li class="nav-item <?php if (basename($_SERVER['PHP_SELF']) == "kontak.php") {
                                         echo "active";

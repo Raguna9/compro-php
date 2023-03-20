@@ -197,9 +197,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <!-- Fasilitas Akhir -->
 
   <!-- Album -->
-  <div class="container" id="galery">
-  <div class="album py-2">
+  <div class="container">
     <h2 class="pb-2 border-bottom">Foto Kegiatan</h2>
+
+  </div>
+
+  <div class="album py-2" id="galery">
+    <div class="container">
       <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
 
 
