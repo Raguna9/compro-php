@@ -61,7 +61,8 @@ require 'app/functions.php';
               <p class="card-text">
                 <?php echo substr($konten_artikel, 0, 100); ?>...
               </p>
-              <a href="full_artikel.php?id=<?php echo $id_artikel; ?>" class="btn btn-primary">Baca Selengkapnya</a>
+              <a href="full_artikel.php?id=<?php echo $id_artikel; ?>" class="btn btn-success">Baca Selengkapnya</a>
+              
             </div>
             <div class="card-footer">
               <small class="text-muted">

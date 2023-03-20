@@ -24,10 +24,8 @@ if (isset($_POST["submit"])) {
 }
 
 ?>
-<div class="container">
-
-    <div class="card mx-5 mt-5">
-        <div class="card-header bg-primary text-white">
+    <div class="card mt-5">
+        <div class="card-header bg-success text-white">
             <strong>Kirimkan balasan mengenai artikel ini</strong>
         </div>
         <div class="card-body">
@@ -45,8 +43,7 @@ if (isset($_POST["submit"])) {
                     <label for="isi_balasan" class="form-label">Balasan</label>
                     <textarea class="form-control" id="isi_balasan" name="isi_balasan" rows="3" required></textarea>
                 </div>
-                <button class="btn btn-primary" type="submit" name="submit">Kirim</button>
+                <button class="btn btn-success" type="submit" name="submit">Kirim</button>
             </form>
         </div>
-    </div>
 </div>

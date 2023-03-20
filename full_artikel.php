@@ -75,10 +75,10 @@ $tanggal_artikel = $row['tanggal_artikel'];
                 </p>
             </div>
         </div>
-
+        <!-- Memuat file kirim_balasan.php -->
+        <?php include("app/balasan/kirim_balasan.php"); ?>
+        
     </div>
-    <!-- Memuat file kirim_balasan.php -->
-    <?php include("app/balasan/kirim_balasan.php"); ?>
 
     <!-- Memuat file components/footer.php -->
     <?php include("components/footer.php"); ?>

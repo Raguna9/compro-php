@@ -43,26 +43,30 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <?php include("components/navbar.php"); ?>
 
   <!-- Carousel -->
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="source/images/statis/carousel.jpg" class="d-block w-100" alt="..." height="486 px" />
+  <div class="container-fluid p-0">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="source/images/statis/carousel.jpg" class="d-block w-100" alt="..." height="486 px" />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="source/images/statis/carousel2.jpg" class="d-block w-100" alt="..." height="486 px" />
+        </div>
+        <div class="carousel-item">
+          <img src="source/images/statis/carousel3.jpg" class="d-block w-100" alt="..." height="486 px" />
+        </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="source/images/statis/carousel2.jpg" class="d-block w-100" alt="..." height="486 px" />
-      </div>
-      <div class="carousel-item">
-        <img src="source/images/statis/carousel3.jpg" class="d-block w-100" alt="..." height="486 px" />
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!-- Akhir Carousel -->
 
@@ -85,6 +89,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
           <a href="lembaga.php">
             <button class="btn btn-outline-secondary" type="button">Selengkapnya</button>
           </a>
+        <div  id="pelajaran"></div>
         </div>
       </div>
     </div>
@@ -92,7 +97,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <!-- Akhir Lembaga -->
 
   <!-- pelajaran -->
-  <div class="container" id="pelajaran">
+  <div class="container">
     <h2 class="border-bottom pb-2">Materi Pelajaran santri</h2>
   </div>
 
@@ -148,127 +153,123 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
           terdapat lembaga lainnya seperti Majelis Taklim.
         </p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2"><a class="link link-dark"
-              href="profile.php">Selengkapnya &raquo;</a></button>
+          <a href="profile.php" class="btn btn-outline-success btn-lg px-4 me-md-2" style="width: 200px;">Lihat
+            Selengkapnya</a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Profile Akhir -->
+    <!-- Profile Akhir -->
 
-  <!-- Fasilitas -->
+    <!-- Fasilitas -->
 
-  <div class="container px-4 py-5" id="icon-grid">
-    <h2 class="pb-2 border-bottom">Fasilitas</h2>
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">Fasilitas</h2>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2">
-
-      <?php
-      // $no = 0;
-      while ($result = mysqli_fetch_array($fasilitas)) {
-        // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
-        // $no++;
-        ?>
-
-        <div class="col d-flex align-items-start">
-          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
-            <use xlink:href="#pin" />
-          </svg>
-          <i class="fa-duotone fa-screen-users"></i>
-          <div>
-            <h4 class="fw-bold mb-0 fs-4">
-              <?php echo $result['nama_fasilitas']; ?>
-            </h4>
-          </div>
-        </div>
-
-      <?php } ?>
-
-
-
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill">
-      <symbol id="pin" viewBox="0 0 16 16">
-        <path
-          d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
-      </symbol>
-    </svg>
-  </div>
-  <!-- Fasilitas Akhir -->
-
-  <!-- Album -->
-  <div class="container">
-    <h2 class="pb-2 border-bottom">Foto Kegiatan</h2>
-
-  </div>
-
-  <div class="album py-2" id="galery">
-    <div class="container">
-      <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
-
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2">
 
         <?php
-        $i = 1;
-        $count = 0; // inisialisasi variabel hitung
-        
-        while ($result = mysqli_fetch_array($foto)) {
-          if ($count < 3) { // tampilkan hanya 3 gambar pertama
-            ?>
-            <div class="col">
-              <div class="card shadow-sm">
-                <!-- Button trigger modal -->
+        // $no = 0;
+        while ($result = mysqli_fetch_array($fasilitas)) {
+          // while ($result =  mysqli_query($conn, "SELECT * from pelajaran")) {
+          // $no++;
+          ?>
 
-                <button type="button" class="btn btn-border-0" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal<?= $i ?>" style="height: 300px;">
-                  <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>"
-                    style="width: 100%; height: 100%; object-fit: cover;" />
-                </button>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+              <use xlink:href="#pin" />
+            </svg>
+            <i class="fa-duotone fa-screen-users"></i>
+            <div>
+              <h4 class="fw-bold mb-0 fs-4">
+                <?php echo $result['nama_fasilitas']; ?>
+              </h4>
+            </div>
+          </div>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal<?= $i ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-center">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">
-                          <?php echo $result['ket_foto']; ?>
-                        </h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>"
-                          width="100%" height="100%" />
-                      </div>
-                      <div class="modal-footer">
+        <?php } ?>
+        <div id="galery"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle-fill">
+        <symbol id="pin" viewBox="0 0 16 16">
+          <path
+            d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- Fasilitas Akhir -->
+
+    <!-- Album -->
+    <div class="container">
+      <h2 class="pb-2 border-bottom">Foto Kegiatan</h2>
+
+    </div>
+
+    <div class="album py-2" >
+      <div class="container">
+        <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
+          <?php
+          $i = 1;
+          $count = 0; // inisialisasi variabel hitung
+          
+          while ($result = mysqli_fetch_array($foto)) {
+            if ($count < 3) { // tampilkan hanya 3 gambar pertama
+              ?>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <!-- Button trigger modal -->
+
+                  <button type="button" class="btn btn-border-0" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal<?= $i ?>" style="height: 300px;">
+                    <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>"
+                      style="width: 100%; height: 100%; object-fit: cover;" />
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal<?= $i ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-center">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            <?php echo $result['ket_foto']; ?>
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="source/images/foto/<?= $result['foto'] ?>" alt="<?php echo $result['ket_foto']; ?>"
+                            width="100%" height="100%" />
+                        </div>
+                        <div class="modal-footer">
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <?php
-            $i++;
-            $count++; // tambahkan hitungan
-          } else {
-            break; // keluar dari perulangan setelah menampilkan 3 gambar pertama
+              <?php
+              $i++;
+              $count++; // tambahkan hitungan
+            } else {
+              break; // keluar dari perulangan setelah menampilkan 3 gambar pertama
+            }
           }
-        }
-        ?>
-      </div>
-      <!-- TOMBOL LIHAT SELENGKAPNYA -->
-      <div class="mt-4">
-        <a href="galeri.php" class="btn btn-outline-success" style="width: 250px;">Lihat Selengkapnya</a>
+          ?>
+        </div>
+        <!-- TOMBOL LIHAT SELENGKAPNYA -->
+        <div class="mt-4">
+          <a href="galeri.php" class="btn btn-outline-success btn-lg px-4 me-md-2" style="width: 250px;">Lihat
+            Selengkapnya</a>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Album Akhir -->
-  <!-- Memuat file components/footer.php -->
-  <?php include("components/footer.php"); ?>
+    <!-- Album Akhir -->
+    <!-- Memuat file components/footer.php -->
+    <?php include("components/footer.php"); ?>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
