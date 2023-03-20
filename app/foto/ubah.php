@@ -71,9 +71,18 @@ if (isset($_POST["submit"])) {
                 <label for="ket_foto" class="form-label">Keterangan Foto</label>
                 <input type="text" class="form-control" name="ket_foto" id="ket_foto" required value="<?= $foto["ket_foto"]; ?>">
             </div>
+            <div class="form-group">
+                <label for="kategori_foto">Kategori:</label>
+                <select class="form-control" id="selectKategori" name="kategori_foto" value="<?= $foto["kategori_foto"]; ?>">
+                    <option value="darul-atqia">Darul Atqia</option>
+                    <option value="paud">PAUD</option>
+                    <option value="smp-islam">SMP Islam</option>
+                    <option value="sma-islam">SMA Islam</option>
+                </select>
+            </div>
             <div class="mb-3">
                 <label for="foto" class="form-label">Foto</label>
-                <input class="form-control form-control-sm" name="foto" id="foto" type="file" required>
+                <input class="form-control form-control-sm" name="foto" id="foto" type="file" value="<?= $foto['foto'] ?>">
 
                 <div class="mt-3">
 

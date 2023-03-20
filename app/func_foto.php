@@ -8,6 +8,7 @@ function tambahFoto($data)
     global $conn;
 
     $ket_foto = htmlspecialchars($data["ket_foto"]);
+    $kategori_foto = htmlspecialchars($data["kategori_foto"]);
 
     // upload gambar/foto
     $foto = uploadFoto();
@@ -16,7 +17,7 @@ function tambahFoto($data)
     }
 
     // query insert data
-    $query = "INSERT INTO foto VALUES ('','$ket_foto','$foto')";
+    $query = "INSERT INTO foto VALUES ('','$ket_foto','$kategori_foto','$foto')";
 
     mysqli_query($conn, $query);
 
@@ -94,6 +95,7 @@ function ubahFoto($data)
 
     $id_foto = $data["id_foto"];
     $ket_foto = htmlspecialchars($data["ket_foto"]);
+    $kategori_foto = htmlspecialchars($data["kategori_foto"]);
     // $penjelasan_pelajaran = htmlspecialchars($data["penjelasan_pelajaran"]);
 
     $gambarLama = htmlspecialchars($data["gambarLama"]);
@@ -109,6 +111,7 @@ function ubahFoto($data)
     // query update data
     $query = "UPDATE foto SET
                 ket_foto = '$ket_foto',
+                kategori_foto = '$kategori_foto',
                 foto = '$foto'
                 WHERE id_foto = $id_foto";
 
