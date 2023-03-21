@@ -17,7 +17,7 @@ if (!isset($_SESSION["login"])) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YPPDA Admin</title>
-    <link href="../source/images/Logo_Ponpes.png" rel="shorcut icon" />
+    <link href="../source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
     <!-- bootstrap 5 css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
@@ -59,20 +59,9 @@ if (!isset($_SESSION["login"])) {
     <?php include("sidebar.php"); ?>
     
     <section class="pt-4 ps-0" id="main-content">
-        <button class="btn btn-success" id="button-toggle">
+        <button class="btn btn-success" id="button-toggle" style="position: fixed;">
             <i class="bi bi-list"></i>
         </button>
-        <!-- <div class="card mt-5">
-            <div class="card-body">
-                <h4>Lorem Ipsum</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-                    animi maxime at minima. Totam vero omnis ducimus commodi placeat
-                    accusamus, repudiandae nemo, harum magni aperiam esse voluptates.
-                    Non, sapiente vero?
-                </p>
-            </div>
-        </div> -->
     </section>
     <?php include 'data_setting.php' ?>
 

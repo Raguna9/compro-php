@@ -2,7 +2,7 @@
     <div class="sidebar p-4 bg-success" id="sidebar">
         <center class="">
 
-            <img src="../source/images/Logo_Ponpes.png" alt="" width="75px">
+            <img src="../source/images/statis/Logo_Ponpes.png" alt="" width="75px">
             <h4 class="mb-1 text-white">DARUL ATQIA</h4>
         </center>
         <hr class="text-white" />

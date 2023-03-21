@@ -54,7 +54,7 @@ if (isset($_POST["submit"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubah Data Foto</title>
-    <link href="../../source/images/Logo_Ponpes.png" rel="shorcut icon" />
+    <link href="../../source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 </head>
@@ -71,9 +71,18 @@ if (isset($_POST["submit"])) {
                 <label for="ket_foto" class="form-label">Keterangan Foto</label>
                 <input type="text" class="form-control" name="ket_foto" id="ket_foto" required value="<?= $foto["ket_foto"]; ?>">
             </div>
+            <div class="form-group">
+                <label for="kategori_foto">Kategori:</label>
+                <select class="form-control" id="selectKategori" name="kategori_foto" value="<?= $foto["kategori_foto"]; ?>">
+                    <option value="darul-atqia">Darul Atqia</option>
+                    <option value="paud">PAUD</option>
+                    <option value="smp-islam">SMP Islam</option>
+                    <option value="sma-islam">SMA Islam</option>
+                </select>
+            </div>
             <div class="mb-3">
                 <label for="foto" class="form-label">Foto</label>
-                <input class="form-control form-control-sm" name="foto" id="foto" type="file" required>
+                <input class="form-control form-control-sm" name="foto" id="foto" type="file" value="<?= $foto['foto'] ?>">
 
                 <div class="mt-3">
 

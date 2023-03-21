@@ -96,7 +96,6 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     <h2 class="border-bottom pb-2">Materi Pelajaran santri</h2>
   </div>
 
-
   <div class="container marketing py-2">
     <div class="row">
       <?php

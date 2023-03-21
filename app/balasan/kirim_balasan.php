@@ -10,14 +10,14 @@ if (isset($_POST["submit"])) {
         echo "
         <script>
             alert('pesan terkirim');
-            document.location.href = 'kontak.php'
+            document.location.reload();
         </script>
         ";
     } else {
         echo "
         <script>
             alert('pesan tidak terkirim');
-            document.location.href = 'kontak.php'
+            document.location.reload();
         </script>
         ";
     }

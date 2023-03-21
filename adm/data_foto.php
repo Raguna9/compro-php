@@ -31,6 +31,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                 <tr>
                     <th class="col-sm-1">No</th>
                     <th class="col-sm-2">Keterangan Foto</th>
+                    <th class="col-sm-2">Kategori Foto</th>
                     <th class="col-sm-3">Foto</th>
                     <th class="col-sm-2">Action</th>
                 </tr>
@@ -46,7 +47,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                     <tr>
                         <td><?php echo $no; ?></td>
                         <td><?php echo $result['ket_foto']; ?></td>
-
+                        <td><?php echo $result['kategori_foto']; ?></td>
                         <td class="text-center">
                             <img src="../source/images/foto/<?= $result['foto'] ?>" alt="" width="150px">
                         </td>

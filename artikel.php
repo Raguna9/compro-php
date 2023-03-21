@@ -10,7 +10,8 @@ require 'app/functions.php';
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
   <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
@@ -24,10 +25,20 @@ require 'app/functions.php';
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
+
+  .artikel-konten {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 </style>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!-- Memuat file components/navbar.php -->
   <?php include("components/navbar.php"); ?>
   <div class="container mt-4">
@@ -44,13 +55,14 @@ require 'app/functions.php';
         $id_artikel = $row['id_artikel'];
         $jdl_artikel = $row['jdl_artikel'];
         $tanggal_artikel = date('d M Y', strtotime($row['tanggal_artikel']));
-        $konten_artikel = $row['konten_artikel'];
+        $konten_artikel = html_entity_decode($row['konten_artikel']);
         $foto_artikel = $row['foto_artikel'];
-        $pembuat_artikel = $row['pembuat_artikel'];
-      ?>
+        $pembuat_artikel = $row['pembuat_artikel']
+          ?>
         <div class="col-md-4 mb-3">
           <div class="card">
-            <img src="source/images/artikel/<?php echo $foto_artikel; ?>" class="card-img-top" alt="<?php echo $jdl_artikel; ?>">
+            <img src="source/images/artikel/<?php echo $foto_artikel; ?>" class="card-img-top"
+              alt="<?php echo $jdl_artikel; ?>">
             <div class="card-body">
               <h5 class="card-title">
 
@@ -58,11 +70,13 @@ require 'app/functions.php';
                   <?php echo $jdl_artikel; ?>
                 </p>
               </h5>
-              <p class="card-text">
-                <?php echo substr($konten_artikel, 0, 100); ?>...
-              </p>
+              <div class="card-text">
+                <span class="artikel-konten mb-3">
+                  <?php echo $konten_artikel; ?>
+                </span>
+              </div>
               <a href="full_artikel.php?id=<?php echo $id_artikel; ?>" class="btn btn-success">Baca Selengkapnya</a>
-              
+
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -80,7 +94,9 @@ require 'app/functions.php';
   <?php include("components/footer.php"); ?>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
