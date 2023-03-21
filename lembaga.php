@@ -21,6 +21,11 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     <title>Yayasan Pondok Pesantren Darul Atqia</title>
     <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,20 +33,37 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     <!-- Memuat file components/navbar.php -->
     <?php include("components/navbar.php"); ?>
 
+    <div class="container pt-4">
+
+        <h3 class="text-center">Yayasan Pondok Pesantren Darul Atqia merupakan pondok pesantren yang berlokasi di Dusun Embung Duduk yang memiliki tujuan untuk mewujudkan generasi qur'ani yang berpendidikan agama. Untuk mewujudkan tujuan tersebut Ponpes Darul Atqia memiliki beberapa lembaga yang bisa dijadikan salah satu alasan putra atau putri Anda agar dapat menimba ilmu di Ponpes Darul Atqia</h3>
+    </div>
+
 
     <!-- Lembaga Formal -->
     <div class="container pt-5">
-        <h2 class="pb-2 border-bottom">Lembaga Formal</h2>
+        <h3 class="pb-2 border-bottom">Lembaga Formal</h3>
     </div>
 
-    <div class="album py-2" id="galery">
+    <div class="album py-3" id="galery">
         <div class="container">
-            <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
+            <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-5">
                 <div class="col pb-3 pt-3">
                     <div class="card shadow-sm">
                         <img src="source/images/statis/logo_ponpes.png" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
                     </div>
-                    <h2 class="border text-center">SMA Islam</h2>
+                    <h4 class="border text-center pt-2 pb-2">PAUD</h4>
+                </div>
+                <div class="col pb-3 pt-3">
+                    <div class="card shadow-sm">
+                        <img src="source/images/statis/logo_ponpes.png" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
+                    </div>
+                    <h4 class="border text-center pt-2 pb-2">SMP Islamiyah</h4>
+                </div>
+                <div class="col pb-3 pt-3">
+                    <div class="card shadow-sm">
+                        <img src="source/images/statis/logo_ponpes.png" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
+                    </div>
+                    <h4 class="border text-center pt-2 pb-2">Madrasah Aliyah</h4>
                 </div>
             </div>
         </div>
@@ -50,17 +72,17 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 
     <!-- Lembaga NonFormal -->
     <div class="container pt-5">
-        <h2 class="pb-2 border-bottom">Lembaga NonFormal</h2>
+        <h3 class="pb-2 border-bottom">Lembaga NonFormal</h3>
     </div>
 
     <div class="album py-2" id="galery">
         <div class="container">
-            <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-3">
+            <div class="row row-cols-2 row-cols-sm-3 rows-cols-md-3 g-5">
                 <div class="col pb-3 pt-3">
                     <div class="card shadow-sm">
                         <img src="source/images/statis/logo_ponpes.png" alt="<?php echo $result['ket_foto']; ?>" width="100%" height="100%" />
                     </div>
-                    <h2 class="border text-center">SMA Islam</h2>
+                    <h4 class="border text-center pt-2 pb-2">Darunnahdliyah</h4>
                 </div>
             </div>
         </div>
