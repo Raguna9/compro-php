@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
   <link href="source/images/statis//Logo_Ponpes.png" rel="shorcut icon" />
@@ -16,9 +15,7 @@
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- Memuat file components/navbar.php -->
   <?php include("components/navbar.php"); ?>
 
@@ -28,11 +25,10 @@
     <img src="source/images/statis/Logo_Ponpes.png" alt="" />
   </div>
 
-
   <div class="container">
     <div class="row justify-content-center py-5">
-      <div class="col-12 col-md-6">
-        <div class="card border border-success" style="height: 320px">
+      <div class="col-6">
+        <div class="card border border-success" style="height: 450px">
           <div class="card-header bg-success text-white">
             <h2 class="text-center">Visi</h2>
           </div>
@@ -44,8 +40,8 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="card border border-success" style="height: 320px">
+      <div class="col-6">
+        <div class="card border border-success" style="height: 450px">
           <div class="card-header bg-success text-white">
             <h2 class="text-center">Misi</h2>
           </div>
@@ -82,25 +78,23 @@
     </div>
   </div>
   <div class="container py-5">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <img src="source/images/statis/Logo_Ponpes.png" alt="" class="img-fluid">
-    </div>
-    <div class="col-md-6">
-      <h2 class="text-center mb-4">Yayasan Pondok Pesantren Darul Atqia</h2>
-      <p class="text-justify">Pondok Pesantren Darul Atqia berlokasi di Dusun Embung Duduk, Desa Labulia, Kecamatan Jonggat, Kabupaten Lombok Tengah, NTB. Pondok Darul Atqia berdiri sejak tahun 2015, Pondok Darul Atqia yang awalnya dikhususkan untuk menghafal Al-Qur'an kini sudah memiliki beberapa murid yang sudah menyelesaikan hafalan 30 juz. Terdapat beberapa lembaga yang ada di naungan pondok darul atqia diantaranya terdapat Pendidikan Anak Usia Dini (PAUD), SMP Islamiyah, dan Madrasah Aliyah. Pendaftaran santri baru bisa dilakukan secara offline yaitu langsung datang ke Pondok Darul Atqia ataupun bisa dengan online melalui GoogleForm yang telah disediakan pihak pondok.</p>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="source/images/statis/Logo_Ponpes.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Yayasan Pondok Pesantren Darul Atqia</h2>
+        <p class="text-justify">Pondok Pesantren Darul Atqia berlokasi di Dusun Embung Duduk, Desa Labulia, Kecamatan Jonggat, Kabupaten Lombok Tengah, NTB. Pondok Darul Atqia berdiri sejak tahun 2015, Pondok Darul Atqia yang awalnya dikhususkan untuk menghafal Al-Qur'an kini sudah memiliki beberapa murid yang sudah menyelesaikan hafalan 30 juz. Terdapat beberapa lembaga yang ada di naungan pondok darul atqia diantaranya terdapat Pendidikan Anak Usia Dini (PAUD), SMP Islamiyah, dan Madrasah Aliyah. Pendaftaran santri baru bisa dilakukan secara offline yaitu langsung datang ke Pondok Darul Atqia ataupun bisa dengan online melalui GoogleForm yang telah disediakan pihak pondok.</p>
+      </div>
     </div>
   </div>
-</div>
   <!-- Akhir New Profile -->
 
   <!-- Memuat file components/footer.php -->
   <?php include("components/footer.php"); ?>
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
