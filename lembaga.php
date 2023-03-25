@@ -21,10 +21,6 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
         .nav-link:not(.active) {
             color: black;
         }
-
-        .nav-link.active {
-            background-color: red;
-        }
     </style>
 
     <title>Yayasan Pondok Pesantren Darul Atqia</title>

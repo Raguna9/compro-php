@@ -22,6 +22,11 @@ $foto_sma_islam = mysqli_query($conn, "SELECT * FROM foto WHERE kategori_foto = 
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <style>
+    .nav-link:not(.active) {
+      color: black;
+    }
+  </style>
 
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
   <link href="source/images/statis/Logo_Ponpes.png" rel="shorcut icon" />
