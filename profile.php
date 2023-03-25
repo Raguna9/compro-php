@@ -12,6 +12,11 @@
   <title>Yayasan Pondok Pesantren Darul Atqia</title>
   <link href="source/images/statis//Logo_Ponpes.png" rel="shorcut icon" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
 </head>
 
 <body>
@@ -79,16 +84,19 @@
   </div>
   <div class="container py-5">
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="source/images/statis/Logo_Ponpes.png" alt="" class="img-fluid">
+      <div class="col-md-6 text-center">
+        <img src="source/images/statis/profile1.jpg" alt="" class="img-fluid">
       </div>
       <div class="col-md-6">
         <h2 class="text-center mb-4">Yayasan Pondok Pesantren Darul Atqia</h2>
-        <p class="text-justify">Pondok Pesantren Darul Atqia berlokasi di Dusun Embung Duduk, Desa Labulia, Kecamatan Jonggat, Kabupaten Lombok Tengah, NTB. Pondok Darul Atqia berdiri sejak tahun 2015, Pondok Darul Atqia yang awalnya dikhususkan untuk menghafal Al-Qur'an kini sudah memiliki beberapa murid yang sudah menyelesaikan hafalan 30 juz. Terdapat beberapa lembaga yang ada di naungan pondok darul atqia diantaranya terdapat Pendidikan Anak Usia Dini (PAUD), SMP Islamiyah, dan Madrasah Aliyah. Pendaftaran santri baru bisa dilakukan secara offline yaitu langsung datang ke Pondok Darul Atqia ataupun bisa dengan online melalui GoogleForm yang telah disediakan pihak pondok.</p>
+        <p class="text-justify">Pondok Pesantren Darul Atqia berlokasi di Dusun Embung Duduk, Desa Labulia, Kecamatan Jonggat, Kabupaten Lombok Tengah, NTB. Pondok Darul Atqia berdiri sejak tahun 2015, Pondok Darul Atqia yang awalnya dikhususkan untuk menghafal Al-Qur'an kini sudah memiliki beberapa murid yang sudah menyelesaikan hafalan 30 juz. Terdapat beberapa lembaga yang ada di naungan pondok darul atqia diantaranya terdapat Pendidikan Anak Usia Dini (PAUD), SMP Islamiyah, dan Madrasah Aliyah, serta terdapat beberapa program pilihan seperti program mondok khusus tahfiz, mondok khusus diniyah, atau hanya sekolah formal saja. Pendaftaran santri baru bisa dilakukan secara offline yaitu langsung datang ke Pondok Darul Atqia ataupun bisa dengan online melalui GoogleForm yang telah disediakan pihak pondok.</p>
       </div>
     </div>
   </div>
   <!-- Akhir New Profile -->
+
+  <!-- Memuat file components/ppdb.php -->
+  <?php include("components/ppdb.php"); ?>
 
   <!-- Memuat file components/footer.php -->
   <?php include("components/footer.php"); ?>

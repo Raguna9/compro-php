@@ -67,22 +67,22 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
 
   <!-- Lembaga  -->
   <div class="container mb-5">
-    <div class="row align-items-md-stretch">
+    <div class="row align-items-md-stretch bg-success-emphasis">
       <div class="col-md-6">
-        <div class="h-70 p-5 text-bg-dark border rounded-3">
+        <div class="h-70 p-5 bg-success-emphasis border border-secondary rounded-3 text-center">
           <h2>Lembaga Formal</h2>
           <p>PAUD, SMP Islam, SMA</p>
           <a href="lembaga.php">
-            <button class="btn btn-outline-warning" type="button">Selengkapnya</button>
+            <button class="btn btn-outline-success" type="button">Selengkapnya</button>
           </a>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="h-100 p-5 bg-light border rounded-3">
+        <div class="h-100 p-5 bg-success-emphasis border border-secondary rounded-3 text-center">
           <h2>Lembaga Non Formal</h2>
           <p>DARUNNAHDLIYAH</p>
           <a href="lembaga.php">
-            <button class="btn btn-outline-secondary" type="button">Selengkapnya</button>
+            <button class="btn btn-outline-success" type="button">Selengkapnya</button>
           </a>
           <div id="pelajaran"></div>
         </div>
@@ -251,6 +251,12 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
     </div>
   </div>
   <!-- Album Akhir -->
+
+  <!-- Memuat file components/ppdb.php -->
+  <div class="mt-5">
+    <?php include("components/ppdb.php"); ?>
+  </div>
+
   <!-- Memuat file components/footer.php -->
   <?php include("components/footer.php"); ?>
 
