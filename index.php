@@ -47,7 +47,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
           <img src="source/images/statis/carousel.jpg" class="d-block w-100" alt="..." height="486 px" />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="source/images/statis/carousel2.jpg" class="d-block w-100" alt="..." height="486 px" />
+          <img src="source/images/statis/ppdb.jpeg" class="d-block w-100" alt="..." height="486 px" />
         </div>
         <div class="carousel-item">
           <img src="source/images/statis/carousel3.jpg" class="d-block w-100" alt="..." height="486 px" />
@@ -134,13 +134,13 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
   <div class="container col-xxl-8 px-4 py-5 bg-light" id="profile">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="source/images/statis/profile.jpg" class="d-block mx-lg-auto img-fluid" alt="Darul Atqia" width="700" height="500" loading="lazy" />
+        <img src="source/images/statis/beasiswa.jpeg" class="d-block mx-lg-auto img-fluid" alt="Darul Atqia" width="700" height="500" loading="lazy" />
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Sekilas Profile Pondok Pesantren Darul Atqia</h1>
         <p class="lead">
           Yayasan Pondok Pesantren Darul Atqia berada di Dusun Embung Duduk, Ds Labulia, Kec Jonggat, Kab Lombok Tengah,
-          NTB. Pondok Pesantren Darul Atqia sudah menaungi beberapa lembaga di dalamnya antara lain RA, SMP, dan SMA
+          NTB. Pondok Pesantren Darul Atqia sudah menaungi beberapa lembaga di dalamnya antara lain PAUD, SMP Islam, dan SMA Islam
           serta
           terdapat lembaga lainnya seperti Majelis Taklim.
         </p>
@@ -244,7 +244,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
         ?>
       </div>
       <!-- TOMBOL LIHAT SELENGKAPNYA -->
-      <div class="mt-4">
+      <div class="mt-3 text-center">
         <a href="galeri.php" class="btn btn-outline-success btn-lg px-4 me-md-2" style="width: 250px;">Lihat
           Selengkapnya</a>
       </div>

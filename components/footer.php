@@ -32,7 +32,7 @@
                         </a>
                     </li>
                     <li class="ms-3">
-                        <a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <a class="link-dark" href="https://instagram.com/darulatqiaofficial?igshid=YmMyMTA2M2Y="><svg class="bi" width="24" height="24">
                                 <use xlink:href="#instagram" />
                             </svg>
                         </a>
