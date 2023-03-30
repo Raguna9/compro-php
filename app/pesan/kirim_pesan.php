@@ -1,4 +1,4 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/PKL/app/functions.php'); ?>
+<?php require 'app/functions.php'; ?>
 <?php
 
 // koneksi database
