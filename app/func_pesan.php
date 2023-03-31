@@ -10,6 +10,7 @@ function tambahPesan($data)
     $nama_pesan = htmlspecialchars($data["nama_pesan"]);
     $email_pesan = htmlspecialchars($data["email_pesan"]);
     $isi_pesan = htmlspecialchars($data["isi_pesan"]);
+    date_default_timezone_set('Asia/Makassar');
     $tanggal_pesan = date("Y-m-d H:i:s"); 
 
     // query insert data

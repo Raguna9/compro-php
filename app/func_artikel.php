@@ -12,6 +12,7 @@ function tambahArtikel($data)
         return false;
     }
     $pembuat_artikel = htmlspecialchars($data["pembuat_artikel"]);
+    date_default_timezone_set('Asia/Makassar');
     $tanggal_artikel = date("Y-m-d H:i:s"); // Tanggal otomatis saat artikel ditambahkan
 
     // query insert data
