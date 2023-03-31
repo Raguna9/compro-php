@@ -74,7 +74,7 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                                     <div class="card shadow-sm">
                                         <img src="source/images/statis/smp-sma3.jpeg" alt="" width="100%" height="220px" />
                                     </div>
-                                    <h4 class="border text-center pt-2 pb-2">Madrasah Aliyah</h4>
+                                    <h4 class="border text-center pt-2 pb-2">SMA Islamiyah</h4>
                                 </div>
                             </div>
                         </div>
