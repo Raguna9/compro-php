@@ -114,6 +114,7 @@ function ubahArtikel($data)
     }
 
     // tambahkan tanggal artikel
+    date_default_timezone_set('Asia/Makassar');
     $tanggal_artikel = date("Y-m-d H:i:s");
 
     // query update data
@@ -129,4 +130,3 @@ function ubahArtikel($data)
 
     return mysqli_affected_rows($conn);
 }
-?>
