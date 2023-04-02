@@ -89,8 +89,21 @@
       </div>
 
       <div class="checkbox mb-3">
-        <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+        <label> <input type="checkbox" value="floatingPassword" onclick="Toggle()" /> Show Password </label>
       </div>
+
+      <script>
+        // Change the type of input to password or text
+        function Toggle() {
+          var temp = document.getElementById("floatingPassword");
+          if (temp.type === "password") {
+            temp.type = "text";
+          } else {
+            temp.type = "password";
+          }
+        }
+      </script>
+
       <button class="w-100 btn btn-lg btn-success" type="submit" name="login">Sign in</button>
       <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
     </form>

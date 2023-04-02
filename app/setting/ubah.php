@@ -5,25 +5,11 @@ require '../functions.php';
 // ambil data di URL
 $id = $_GET["id"];
 
-// query data pelajaran
+// query data admin
 $admin = query("SELECT * FROM admin WHERE id_admin =$id")[0];
-
-
-
-// koneksi database
-// $conn = mysqli_connect("localhost", "root", "", "darul_atqia");
 
 // cek apakah tombol submit sudah ditekan atau belum
 if (isset($_POST["submit"])) {
-
-    // $nama_pelajaran = $_POST["nama_pelajaran"];
-    // $penjelasan_pelajaran = $_POST["penjelasan_pelajaran"];
-    // $foto_pelajaran = $_POST["foto_pelajaran"];
-
-    // // query insert data
-    // $query = "INSERT INTO pelajaran VALUES ('','$nama_pelajaran','$penjelasan_pelajaran','$foto_pelajaran')";
-
-    // mysqli_query($conn, $query);
 
     // cek apakah data berhasil diubah atau gagal
     if (ubahAdmin($_POST) > 0) {
@@ -73,10 +59,24 @@ if (isset($_POST["submit"])) {
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" rows="3" name="password" id="password" required value="<?= $admin["password"]; ?>"></input>
+                <input type="password" class="form-control" rows="3" name="password" id="floatingPassword" required value="<?= $admin["password"]; ?>"></input>
             </div>
 
+            <div class="checkbox mb-3">
+                <label> <input type="checkbox" value="<?= $admin["password"]; ?>" onclick="Toggle()" /> Show Password </label>
+            </div>
 
+            <script>
+                // Change the type of input to password or text
+                function Toggle() {
+                    var temp = document.getElementById("floatingPassword");
+                    if (temp.type === "password") {
+                        temp.type = "text";
+                    } else {
+                        temp.type = "password";
+                    }
+                }
+            </script>
 
 
             <button class="btn btn-success" type="sumbit" name="submit">Ubah Data</button>

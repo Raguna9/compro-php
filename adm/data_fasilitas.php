@@ -16,7 +16,7 @@ $fasilitas = mysqli_query($conn, "SELECT * FROM fasilitas");
 
                 <tr>
                     <th class="col-1">No</th>
-                    <th class="col-2">Nama Pelajaran</th>
+                    <th class="col-2">Nama Fasilitas</th>
                     <th class="col-1">Action</th>
                 </tr>
 
