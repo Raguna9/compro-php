@@ -90,6 +90,24 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                                     </div>
                                     <h4 class="border text-center pt-2 pb-2">MTDS Darunnahdliyah</h4>
                                 </div>
+                                <div class="col pb-3 pt-3">
+                                    <div class="card shadow-sm">
+                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                    </div>
+                                    <h4 class="border text-center pt-2 pb-2">Taman Pendidikan Qur'an</h4>
+                                </div>
+                                <div class="col pb-3 pt-3">
+                                    <div class="card shadow-sm">
+                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                    </div>
+                                    <h4 class="border text-center pt-2 pb-2">Tahfidzul Qur'an</h4>
+                                </div>
+                                <div class="col pb-3 pt-3">
+                                    <div class="card shadow-sm">
+                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                    </div>
+                                    <h4 class="border text-center pt-2 pb-2">Diniyah Taklimiyah</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
