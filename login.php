@@ -76,7 +76,9 @@
 <body class="text-center">
   <main class="form-signin w-100 m-auto">
     <form action="auth.php" method="post">
-      <img class="mb-4" src="source/images/statis/Logo_Ponpes.png" alt="" width="100" height="100" />
+      <a href="index.php">
+        <img class="mb-4" src="source/images/statis/Logo_Ponpes.png" alt="" width="100" height="100" />
+      </a>
       <h1 class="h3 mb-3 fw-normal">Sign in</h1>
 
       <div class="form-floating">

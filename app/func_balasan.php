@@ -11,7 +11,8 @@ function tambahBalasan($data)
     $email_balasan = htmlspecialchars($data["email_balasan"]);
     $isi_balasan = htmlspecialchars($data["isi_balasan"]);
     $id_artikel = htmlspecialchars($data["id_artikel"]);
-    $tanggal_balasan = date("Y-m-d H:i:s"); 
+    date_default_timezone_set('Asia/Makassar');
+    $tanggal_balasan = date("Y-m-d H:i:s");
 
     // query insert data
     $query = "INSERT INTO balasan VALUES ('','$nama_balasan','$email_balasan','$isi_balasan','$id_artikel','$tanggal_balasan')";

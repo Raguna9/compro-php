@@ -92,19 +92,19 @@ $foto = mysqli_query($conn, "SELECT * FROM foto");
                                 </div>
                                 <div class="col pb-3 pt-3">
                                     <div class="card shadow-sm">
-                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                        <img src="source/images/statis/tpq2.jpg" alt="" width="100%" height="220px" />
                                     </div>
                                     <h4 class="border text-center pt-2 pb-2">Taman Pendidikan Qur'an</h4>
                                 </div>
                                 <div class="col pb-3 pt-3">
                                     <div class="card shadow-sm">
-                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                        <img src="source/images/statis/tahfiz.jpg" alt="" width="100%" height="220px" />
                                     </div>
                                     <h4 class="border text-center pt-2 pb-2">Tahfidzul Qur'an</h4>
                                 </div>
                                 <div class="col pb-3 pt-3">
                                     <div class="card shadow-sm">
-                                        <img src="source/images/statis/darunnahdliyah.jpg" alt="" width="100%" height="220px" />
+                                        <img src="source/images/statis/diniyah.jpg" alt="" width="100%" height="220px" />
                                     </div>
                                     <h4 class="border text-center pt-2 pb-2">Diniyah Taklimiyah</h4>
                                 </div>
